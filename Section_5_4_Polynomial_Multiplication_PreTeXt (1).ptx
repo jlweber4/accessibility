@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+
+
+  docinfo
+</p>>
+    <macros>
+      \newcommand{\amp}{&amp;}
+    </macros>
+  </docinfo>
+
+  <article xml:id="section-5-4-polynomial-multiplication">
+    <title>Section 5.4: Multiplying Polynomials</title>
+
+    <section xml:id="sec-rules-definitions">
+      <title>Key Rules and Definitions</title>
+
+      <subsection xml:id="subsec-product-rule">
+        <title>Product Rule for Exponents</title>
+        <p>
+          When multiplying powers with the same base, add the exponents:
+        </p>
+        <me>x^n \cdot x^m = x^{n+m}</me>
+      </subsection>
+
+      <subsection xml:id="subsec-power-product">
+        <title>Power of a Product Rule</title>
+        <me>(xy)^2 = x^2 y^2</me>
+      </subsection>
+
+      <subsection xml:id="subsec-common-mistake">
+        <title>Important Warning</title>
+        <warning>
+          <p>
+            <m>(x + y)^2</m> does <alert>NOT</alert> equal <m>x^2 + y^2</m>. 
+            You must expand using the distributive property or FOIL method.
+          </p>
+        </warning>
+      </subsection>
+    </section>
+
+    <section xml:id="sec-special-products">
+      <title>Special Products Formulas</title>
+
+      <subsection xml:id="subsec-square-sum">
+        <title>Square of a Sum</title>
+        <me>(x + y)^2 = (x + y)(x + y) = x^2 + xy + xy + y^2 = x^2 + 2xy + y^2</me>
+      </subsection>
+
+      <subsection xml:id="subsec-square-difference">
+        <title>Square of a Difference</title>
+        <me>(x - y)^2 = (x - y)(x - y) = x^2 - xy - xy + y^2 = x^2 - 2xy + y^2</me>
+      </subsection>
+    </section>
+
+    <section xml:id="sec-distributing-monomial">
+      <title>Method: Distributing a Monomial Over a Polynomial</title>
+
+      <example xml:id="ex-monomial-distribution">
+        <title>Multiply <m>-4ab(xa^2 + ya^2 - 3)</m></title>
+        <statement>
+          <p>Expand the expression <m>-4ab(xa^2 + ya^2 - 3)</m>.</p>
+        </statement>
+        <solution>
+          <p>Distribute <m>-4ab</m> to each term inside the parentheses:</p>
+          <md>
+            <mrow>\amp -4ab \cdot xa^2 = -4a^3bx</mrow>
+            <mrow>\amp -4ab \cdot ya^2 = -4a^3by</mrow>
+            <mrow>\amp -4ab \cdot (-3) = +12ab</mrow>
+          </md>
+          <p><term>Final Answer:</term></p>
+          <me>-4a^3bx - 4a^3by + 12ab</me>
+        </solution>
+      </example>
+    </section>
+
+    <section xml:id="sec-binomial-trinomial">
+      <title>Method: Multiplying a Binomial by a Trinomial</title>
+
+      <example xml:id="ex-binomial-trinomial">
+        <title>Multiply <m>(a + 2)(a^2 - a + 5)</m></title>
+        <statement>
+          <p>Expand the expression <m>(a + 2)(a^2 - a + 5)</m>.</p>
+        </statement>
+        <solution>
+          <p>Distribute each term of the binomial to every term of the trinomial:</p>
+          <p>First, distribute <m>a</m>:</p>
+          <me>a(a^2 - a + 5) = a^3 - a^2 + 5a</me>
+          <p>Next, distribute <m>2</m>:</p>
+          <me>2(a^2 - a + 5) = 2a^2 - 2a + 10</me>
+          <p>Combine all terms:</p>
+          <me>a^3 - a^2 + 5a + 2a^2 - 2a + 10</me>
+          <p>Combine like terms:</p>
+          <ul>
+            <li><p><m>a^3</m> term: <m>a^3</m></p></li>
+            <li><p><m>a^2</m> terms: <m>-a^2 + 2a^2 = a^2</m></p></li>
+            <li><p><m>a</m> terms: <m>5a - 2a = 3a</m></p></li>
+            <li><p>Constant: <m>10</m></p></li>
+          </ul>
+          <p><term>Final Answer:</term></p>
+          <me>a^3 + a^2 + 3a + 10</me>
+        </solution>
+      </example>
+    </section>
+
+    <section xml:id="sec-foil-method">
+      <title>Method: FOIL for Multiplying Two Binomials</title>
+
+      <definition xml:id="def-foil">
+        <title>FOIL Method</title>
+        <statement>
+          <p>
+            <term>FOIL</term> is an acronym for multiplying two binomials:
+          </p>
+          <ul>
+            <li><p><term>F</term>irst: Multiply the first terms of each binomial</p></li>
+            <li><p><term>O</term>uter: Multiply the outer terms</p></li>
+            <li><p><term>I</term>nner: Multiply the inner terms</p></li>
+            <li><p><term>L</term>ast: Multiply the last terms of each binomial</p></li>
+          </ul>
+          <p>Then combine like terms (collapse the middle terms).</p>
+        </statement>
+      </definition>
+
+      <example xml:id="ex-foil-basic">
+        <title>Multiply <m>(x + 3)(2x - 7)</m></title>
+        <statement>
+          <p>Use FOIL to expand <m>(x + 3)(2x - 7)</m>.</p>
+        </statement>
+        <solution>
+          <p>Apply FOIL:</p>
+          <ul>
+            <li><p><term>First:</term> <m>x \cdot 2x = 2x^2</m></p></li>
+            <li><p><term>Outer:</term> <m>x \cdot (-7) = -7x</m></p></li>
+            <li><p><term>Inner:</term> <m>3 \cdot 2x = 6x</m></p></li>
+            <li><p><term>Last:</term> <m>3 \cdot (-7) = -21</m></p></li>
+          </ul>
+          <p>Write all terms:</p>
+          <me>2x^2 - 7x + 6x - 21</me>
+          <p>Combine like terms (collapse middle): <m>-7x + 6x = -x</m></p>
+          <p><term>Final Answer:</term></p>
+          <me>2x^2 - x - 21</me>
+        </solution>
+      </example>
+    </section>
+
+    <section xml:id="sec-special-products-examples">
+      <title>Special Products Examples</title>
+
+      <example xml:id="ex-square-binomial">
+        <title>Square of a Binomial: <m>(3x + 4)^2</m></title>
+        <statement>
+          <p>Expand <m>(3x + 4)^2</m>.</p>
+        </statement>
+        <solution>
+          <p>This means <m>(3x + 4)(3x + 4)</m>.</p>
+          <p>Using FOIL or the special product formula:</p>
+          <ul>
+            <li><p>First: <m>3x \cdot 3x = 9x^2</m></p></li>
+            <li><p>Outer: <m>3x \cdot 4 = 12x</m></p></li>
+            <li><p>Inner: <m>4 \cdot 3x = 12x</m></p></li>
+            <li><p>Last: <m>4 \cdot 4 = 16</m></p></li>
+          </ul>
+          <p>Combine:</p>
+          <me>9x^2 + 12x + 12x + 16</me>
+          <p><term>Final Answer:</term></p>
+          <me>9x^2 + 24x + 16</me>
+        </solution>
+      </example>
+
+      <example xml:id="ex-conjugates">
+        <title>Conjugates: <m>(5x - 8)(5x + 8)</m></title>
+        <statement>
+          <p>Expand <m>(5x - 8)(5x + 8)</m>.</p>
+        </statement>
+        <solution>
+          <definition xml:id="def-conjugates-inline">
+            <title>Conjugates</title>
+            <statement>
+              <p>
+                <term>Conjugates</term> are binomials that have the same terms but opposite signs 
+                in the middle. When multiplied, the middle terms cancel out.
+              </p>
+            </statement>
+          </definition>
+          <p>Using FOIL:</p>
+          <ul>
+            <li><p>First: <m>5x \cdot 5x = 25x^2</m></p></li>
+            <li><p>Outer: <m>5x \cdot 8 = 40x</m></p></li>
+            <li><p>Inner: <m>(-8) \cdot 5x = -40x</m></p></li>
+            <li><p>Last: <m>(-8) \cdot 8 = -64</m></p></li>
+          </ul>
+          <p>Combine:</p>
+          <me>25x^2 + 40x - 40x - 64</me>
+          <p>Middle terms cancel: <m>40x - 40x = 0</m></p>
+          <p><term>Final Answer:</term></p>
+          <me>25x^2 - 64</me>
+          <p><em>Note: This is called a "difference of squares" pattern.</em></p>
+        </solution>
+      </example>
+    </section>
+
+    <section xml:id="sec-applications">
+      <title>Application Problems</title>
+
+      <example xml:id="ex-circle-area">
+        <title>MML Problem 75: Area of a Circle</title>
+        <statement>
+          <p>
+            A circle has radius <m>r = 6x - 7</m> kilometers. 
+            Find the area of the circle in terms of <m>x</m>.
+          </p>
+        </statement>
+        <solution>
+          <p><term>Formula:</term> <m>\text{Area} = \pi r^2</m></p>
+          <p>Substitute the radius:</p>
+          <me>\text{Area} = \pi (6x - 7)^2</me>
+          <p>Expand <m>(6x - 7)^2</m> using FOIL:</p>
+          <md>
+            <mrow>(6x - 7)(6x - 7) \amp</mrow>
+            <mrow>\text{First: } 6x \cdot 6x \amp = 36x^2</mrow>
+            <mrow>\text{Outer: } 6x \cdot (-7) \amp = -42x</mrow>
+            <mrow>\text{Inner: } (-7) \cdot 6x \amp = -42x</mrow>
+            <mrow>\text{Last: } (-7) \cdot (-7) \amp = 49</mrow>
+          </md>
+          <p>Combine:</p>
+          <me>36x^2 - 42x - 42x + 49 = 36x^2 - 84x + 49</me>
+          <p><term>Final Answer:</term></p>
+          <me>\pi(36x^2 - 84x + 49) \text{ square kilometers}</me>
+        </solution>
+      </example>
+
+      <example xml:id="ex-shaded-region">
+        <title>Area of Shaded Region</title>
+        <statement>
+          <figure xml:id="fig-nested-squares">
+            <caption>Nested squares diagram</caption>
+            <description>
+              A large square with side length (3x - 2) inches. In the bottom-left corner 
+              of the large square, there is a smaller square with side length x inches. 
+              The smaller square is shaded with diagonal hatching. The problem asks for 
+              the area of the unshaded region (the large square minus the small square).
+            </description>
+            <image width="50%">
+              <description>
+                Large square labeled (3x - 2) in. on top and right sides. 
+                Small shaded square in bottom-left corner labeled x on bottom and left sides.
+              </description>
+            </image>
+          </figure>
+          <p>
+            Find the area of the unshaded region: the large square minus the small square.
+          </p>
+        </statement>
+        <solution>
+          <p><term>Setup:</term> Area of large square minus Area of small square</p>
+          <me>(3x - 2)^2 - x^2</me>
+          <p>Expand <m>(3x - 2)^2</m>:</p>
+          <md>
+            <mrow>\text{First: } 3x \cdot 3x \amp = 9x^2</mrow>
+            <mrow>\text{Outer: } 3x \cdot (-2) \amp = -6x</mrow>
+            <mrow>\text{Inner: } (-2) \cdot 3x \amp = -6x</mrow>
+            <mrow>\text{Last: } (-2) \cdot (-2) \amp = 4</mrow>
+          </md>
+          <p>Result: <m>9x^2 - 6x - 6x + 4 = 9x^2 - 12x + 4</m></p>
+          <p>Subtract <m>x^2</m>:</p>
+          <me>(9x^2 - 12x + 4) - x^2</me>
+          <p>Combine like terms: <m>9x^2 - x^2 - 12x + 4</m></p>
+          <p><term>Final Answer:</term></p>
+          <me>(8x^2 - 12x + 4) \text{ square inches}</me>
+        </solution>
+      </example>
+    </section>
+
+    <section xml:id="sec-summary">
+      <title>Summary of Key Concepts</title>
+      
+      <list xml:id="list-key-concepts">
+        <title>Key Formulas and Methods</title>
+        <ol>
+          <li>
+            <p><term>Product Rule:</term> <m>x^n \cdot x^m = x^{n+m}</m></p>
+          </li>
+          <li>
+            <p><term>FOIL Method:</term> For multiplying two binomials — First, Outer, Inner, Last</p>
+          </li>
+          <li>
+            <p><term>Square of a Sum:</term> <m>(x + y)^2 = x^2 + 2xy + y^2</m></p>
+          </li>
+          <li>
+            <p><term>Square of a Difference:</term> <m>(x - y)^2 = x^2 - 2xy + y^2</m></p>
+          </li>
+          <li>
+            <p><term>Conjugates/Difference of Squares:</term> <m>(x + y)(x - y) = x^2 - y^2</m></p>
+          </li>
+          <li>
+            <p><term>Distribution:</term> When multiplying a monomial by a polynomial, distribute to each term</p>
+          </li>
+        </ol>
+      </list>
+    </section>
+
+  </article>
+</pretext>
